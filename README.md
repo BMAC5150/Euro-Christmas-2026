@@ -7,7 +7,7 @@ Travel guide for BMAC and Judy, Nov 30 to Dec 6, 2026. All times are local (CET)
 
 ## Using the app on an iPhone
 
-1. Open the GitHub Pages address in Safari: `https://bmac5150.github.io/euro-christmas-2026/app/` (the bare address redirects there).
+1. Open the GitHub Pages address in Safari: `https://bmac5150.github.io/Euro-Christmas-2026/app/` (the bare address redirects there).
 2. Share → **Add to Home Screen**.
 3. Open it once from the home screen while online. After that it works offline.
 
@@ -32,4 +32,6 @@ The app's trip data is written into `app/index.html` (the `DAYS`, `BOOKINGS` and
 Either Pages setting works:
 
 - **Deploy from a branch** (`main`, `/ (root)`): the whole repo is served, and `index.html` at the root redirects to `app/`.
-- **GitHub Actions**: `.github/workflows/pages.yml` serves only `app/`, so the PDFs are not on the site.
+- **GitHub Actions**: `.github/workflows/pages.yml` serves only `app/`, so the PDFs are not on the site. It is manual-only now; add a push trigger if you switch.
+
+The address is case-sensitive: `Euro-Christmas-2026`.
