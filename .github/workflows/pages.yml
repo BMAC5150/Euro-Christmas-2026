@@ -1,9 +1,9 @@
 name: Deploy guide to GitHub Pages
 
+# Pages is set to "Deploy from a branch" (main, root), so this only runs by hand.
+# To publish just app/ instead, set Settings > Pages > Source to "GitHub Actions"
+# and add back a push trigger on main.
 on:
-  push:
-    branches: [main]
-    paths: ["app/**", ".github/workflows/pages.yml"]
   workflow_dispatch:
 
 permissions:
