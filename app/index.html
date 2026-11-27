@@ -9,6 +9,9 @@
 <meta name="theme-color" content="#F4F6F4" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#101413" media="(prefers-color-scheme: dark)">
 <meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="icons/icon.svg">
 <style>
 /* Layout: single column, sticky-free header, fixed bottom tab bar. Quiet fir-green accent, system faces (work offline on iPhone). */
 :root {
@@ -1000,5 +1003,10 @@ function App() {
 
 ReactDOM.createRoot(document.getElementById("root")).render(html`<${App}/>`);
 })();
+</script>
+<script>
+if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
+  window.addEventListener("load", function () { navigator.serviceWorker.register("sw.js"); });
+}
 </script>
 </body></html>
